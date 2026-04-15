@@ -2,62 +2,68 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- IMPORTANTE PRA GITHUB PAGES -->
+  <base href="/charry/">
+
   <title>Quiz Dia das Mães</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="quiz-app">
 
-    <!-- CAPA -->
-    <section class="quiz-screen hero-step active">
-      <div class="hero-content">
-        <h1>THE REAL<br>MOM STYLE</h1>
-        <p class="subtitle">O ESTILO DELA, TRADUZIDO EM PRESENTE</p>
+<div class="quiz-app">
 
-        <div class="form-group">
-          <label>Seu nome</label>
-          <input type="text" id="nome" placeholder="Digite seu nome" />
-        </div>
+  <!-- CAPA -->
+  <section class="quiz-screen hero-step active">
+    <div class="hero-content">
+      <h1>THE REAL<br>MOM STYLE</h1>
+      <p class="subtitle">O ESTILO DELA, TRADUZIDO EM PRESENTE</p>
 
-        <div class="form-group">
-          <label>Seu telefone</label>
-          <input type="text" id="telefone" placeholder="(00) 00000-0000" />
-        </div>
-
-        <button class="primary-btn hero-btn" id="startQuiz">Continuar</button>
+      <div class="form-group">
+        <label>Seu nome</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
       </div>
-    </section>
 
-    <!-- PERGUNTAS -->
-    <section class="quiz-screen question-step">
-      <div class="question-content">
-        <h2 id="questionTitle"></h2>
-        <div id="optionsContainer"></div>
-
-        <div class="nav-actions">
-          <button class="secondary-btn" id="prevBtn">Voltar</button>
-          <button class="primary-btn" id="nextBtn">Continuar</button>
-        </div>
+      <div class="form-group">
+        <label>Seu telefone</label>
+        <input type="text" id="telefone" placeholder="(00) 00000-0000">
       </div>
-    </section>
 
-    <!-- RESULTADO -->
-    <section class="quiz-screen result-step">
-      <div class="result-content">
-        <h2 id="resultTitle"></h2>
-        <p id="resultDescription"></p>
+      <button class="primary-btn hero-btn" id="startQuiz">Continuar</button>
+    </div>
+  </section>
 
-        <a class="primary-btn link-btn" id="resultLink" target="_blank">
-          Ver produtos
-        </a>
+  <!-- PERGUNTAS -->
+  <section class="quiz-screen question-step">
+    <div class="question-content">
+      <h2 id="questionTitle"></h2>
+      <div id="optionsContainer"></div>
 
-        <button class="secondary-btn" id="restartBtn">Refazer</button>
+      <div class="nav-actions">
+        <button class="secondary-btn" id="prevBtn">Voltar</button>
+        <button class="primary-btn" id="nextBtn">Continuar</button>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </div>
+  <!-- RESULTADO -->
+  <section class="quiz-screen result-step">
+    <div class="result-content">
+      <h2 id="resultTitle"></h2>
+      <p id="resultDescription"></p>
 
-  <script src="script.js"></script>
+      <a class="primary-btn link-btn" id="resultLink" target="_blank">
+        Ver produtos
+      </a>
+
+      <button class="secondary-btn" id="restartBtn">Refazer</button>
+    </div>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
