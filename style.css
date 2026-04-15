@@ -5,7 +5,6 @@
   font-family: Arial;
 }
 
-/* BASE */
 body {
   background: #f5f1eb;
 }
@@ -22,7 +21,7 @@ body {
 
 /* ===== CAPA ===== */
 .hero-step {
-  background: url("QUIZZ.jpg") center/cover;
+  background: url("QUIZZ.jpg") center/cover no-repeat;
   align-items: center;
   justify-content: flex-end;
   padding: 40px;
@@ -38,7 +37,7 @@ body {
   max-width: 450px;
 }
 
-/* INPUTS */
+/* INPUT */
 .hero-step input {
   width: 100%;
   height: 50px;
@@ -55,13 +54,13 @@ body {
   color: rgba(255,255,255,0.7);
 }
 
-/* BOTÃO BRANCO DA CAPA */
+/* BOTÃO BRANCO */
 .hero-btn {
   background: #fff;
   color: #000;
 }
 
-/* ===== PERGUNTAS / RESULTADO ===== */
+/* ===== PERGUNTAS ===== */
 .question-step,
 .result-step {
   align-items: center;
@@ -82,8 +81,8 @@ body {
   background: #fff;
   padding: 30px;
   border-radius: 20px;
-  width: 100%;
   max-width: 600px;
+  width: 100%;
 }
 
 /* BOTÕES */
@@ -127,6 +126,5 @@ body {
 @media(max-width:768px){
   .hero-step {
     padding: 20px;
-    justify-content: flex-end;
   }
 }
